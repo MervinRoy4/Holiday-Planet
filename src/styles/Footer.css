@@ -1,0 +1,34 @@
+.footer{
+    background-color: rgb(8, 37, 65);
+    color: #727272;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.footer p{
+    color: #4e4e4e;
+}
+
+.footer-customer-engagement h1{
+    font-size: 3rem;
+    background-image: linear-gradient(0deg, rgba(120,120,120,1) 0%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:   
+   text;
+    text-fill-color: transparent;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0.5rem;
+  }
+
+  li{
+    font-size: 1.5rem;
+    margin: 1rem;
+  }

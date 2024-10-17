@@ -1,14 +1,15 @@
 import React from 'react';
+import '../styles/Footer.css'
 
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <div>
+      <div className='footer-customer-engagement'>
         <h1>Book Your Tour Today!</h1>
         <h4>Join us for an Unforgettable Holiday planet adventures</h4>
       </div>
       <div className="footer-content">
-        <div>
+        <div className='footer-links'>
           <ul>
             <li>Home</li>
             <li>Tour Details</li>
@@ -18,7 +19,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
         <div>
-          <img src="" alt="logo" />
+          <img src="src/assets/logo.png" alt="logo" />
           <p>Discover the awe-inspiring beauty of Mount Bromo with our exclusive sunrise tours. Witness the breathtaking sunrise from the summit. embark on thrilling Jeep adventures, and immerse yourself in the rich local culture.</p>
           <a href="">More About Us</a>
         </div>
