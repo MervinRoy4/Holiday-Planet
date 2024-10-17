@@ -1,0 +1,25 @@
+.navigation {
+    background: rgba(255, 255, 255, 0.1);  /* Transparent white background */
+    backdrop-filter: blur(10px);           /* Blurs the content behind the nav */
+    -webkit-backdrop-filter: blur(10px);   /* Webkit support for Safari */
+    border-radius: 15px;                   /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border to enhance the glass effect */
+    
+    display: flex;
+    justify-content: space-around;         /* Space out nav items evenly */
+    padding: 10px 20px;                    /* Padding for spacing inside nav */
+  }
+  
+  .navigation a {
+    color: white;                          /* Text color */
+    text-decoration: none;                 /* Remove underline from links */
+    font-size: 16px;                       /* Adjust font size */
+    padding: 8px 16px;                     /* Space around links */
+    transition: color 0.3s ease;           /* Smooth transition for hover effect */
+  }
+  
+  .navigation a:hover {
+    color: #f0f0f0;                        /* Slight color change on hover */
+  }
+  

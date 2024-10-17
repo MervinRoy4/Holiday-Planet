@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
         <button className="book-button">Book Now</button>
       </div>
       <div className="hero-image">
-        <img src="path-to-your-image" alt="Mount Bromo" />
+        <img src="src/assets/hero_image.jpg" alt="Mount Bromo" />
       </div>
     </section>
   );
