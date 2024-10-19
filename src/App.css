@@ -3,6 +3,10 @@
   color: #333;
 }
 
+body {
+  width: auto;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

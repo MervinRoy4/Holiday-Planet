@@ -1,0 +1,103 @@
+/* HeroSection.css */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/hero_image.jpg'); /* Hero image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 50px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    z-index: 2; /* Ensure content is above the background */
+  }
+  
+  .hero-content h2 {
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .book-button {
+    background-color: white;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .book-button:hover {
+    background-color: #fca311;
+    color: white;
+  }
+  
+  .book-button svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .hero-image {
+    position: absolute;
+    bottom: 00px;
+    right: 0px;
+    width: 100px; /* Reduced width for smaller fitting */
+    height: auto;
+    border-radius: 10px; /* Slight rounding to match modern style */
+    z-index: 1;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  }
+  
+  .hero-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay to darken background image */
+    z-index: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .hero-content h2 {
+      font-size: 40px;
+    }
+  
+    .book-button {
+      width: 100%;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .hero-image {
+      width: 100%;
+      right: 0;
+      bottom: 0;
+      max-width: 200px; /* Adjusted for smaller screens */
+    }
+  }
+  

@@ -5,15 +5,18 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="logo">
-        <h1>Mount Bromo Sunrise Tour</h1>
+        <img src="src/assets/logo_color.png" alt="logo" />
       </div>
       <nav className="navigation">
+        <a href="index.html">Home</a>
         <a href="#tour-details">Tour Details</a>
         <a href="#travel-plan">Travel Plan</a>
         <a href="#packages">Packages</a>
         <a href="#testimonials">Testimonials</a>
-        <button className="book-now">Book Now</button>
       </nav>
+      <div>
+        <button className="book-now">Book Now</button>
+      </div>
     </header>
   );
 }
