@@ -14,8 +14,8 @@ const Header: React.FC = () => {
         <a href="#packages">Packages</a>
         <a href="#testimonials">Testimonials</a>
       </nav>
-      <div>
-        <button className="book-now">Book Now</button>
+      <div className='cta'>
+        <button className="book-now">CONTACT US</button>
       </div>
     </header>
   );

@@ -5,9 +5,7 @@ const HeroSection: React.FC = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h2>Unforgettable Mount Bromo Sunrise Tour</h2>
-        <p>Magic of East Java Tour</p>
-        <p>Date: 24 July 2024</p>
+        <h2>Unforgettable Holiday Planet Experience</h2>
         <button className="book-button">Book Now</button>
       </div>
       <div className="hero-image">

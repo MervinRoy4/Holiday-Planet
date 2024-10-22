@@ -1,24 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Footer.css'
 
 const Footer: React.FC = () => {
+  const [email, setEmail] = useState('');
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubscribe = () => {
+    if (email) {
+      console.log('Subscribed with:', email);
+      setEmail(''); // Clear input after subscribing
+    } else {
+      console.log('Please enter a valid email address.');
+    }
+  };
+
   return (
     <footer className="footer">
-      <div className='footer-customer-engagement'>
-        <h1>Book Your Tour Today!</h1>
-        <h4>Join us for an Unforgettable Holiday planet adventures</h4>
-      </div>
-      <div className="footer-content">
-        <div className='footer-links'>
-          <ul>
-            <li>Home</li>
-            <li>Tour Details</li>
-            <li>Travel Plan</li>
-            <li>Package</li>
-            <li>Testimonials</li>
-          </ul>
+      <div className='horizontal'>
+        <div className='footer-customer-engagement'>
+          <h1>Book Your Tour Today!</h1>
+          <h4>Join us for an Unforgettable Holiday Planet Experience.</h4>
         </div>
-        <div>
+
+        <div className="subscription-section">
+          <div className="subscribe-container">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={handleInputChange}
+              className="subscribe-input"
+            />
+            <button onClick={handleSubscribe} className="subscribe-button">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      
+      <div className="footer-content">
+        <div className='about-us'>
           <img src="src/assets/logo.png" alt="logo" />
           <p>Discover the awe-inspiring beauty of Mount Bromo with our exclusive sunrise tours. Witness the breathtaking sunrise from the summit. embark on thrilling Jeep adventures, and immerse yourself in the rich local culture.</p>
           <a href="">More About Us</a>
