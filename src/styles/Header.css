@@ -1,13 +1,17 @@
 .header{
-  width: 100%;
-  position: static;
+  width: calc(100% - 16px);
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
+  margin: 8px;
+  
 }
 
 .logo img{
   height: 40px;
+  
 }
 
 .navigation {
