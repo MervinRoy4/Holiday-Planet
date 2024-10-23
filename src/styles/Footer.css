@@ -191,4 +191,8 @@ p {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .about-us{
+        width: 100%;
+    }
 }
