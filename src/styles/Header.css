@@ -55,17 +55,17 @@
 .book-now {
   background-color: rgba(255, 255, 255, 0.1); /* Match button background with navigation */
   backdrop-filter: blur( 16px );
--webkit-backdrop-filter: blur( 16px );
   color: white;
   height: 100%;
   border: none;
-  padding: 10px 10px;
+  padding: 11px 10px 10px 10px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  box-shadow: inset 0 0 4px hsla(0, 0%, 100%, 0.5);
   gap: 5px;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }

@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
       <hr />
       
       <div className="footer-content">
-        <div className='horizontal'>
+        <div className='footer-company-info'>
           <div className='about-us'>
             <img src="src/assets/logo.png" alt="logo" />
             <p>Discover the awe-inspiring beauty of Mount Bromo with our exclusive sunrise tours. Witness the breathtaking sunrise from the summit. embark on thrilling Jeep adventures, and immerse yourself in the rich local culture.</p>
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
             <div className='contact-us seperate'>
               <h4>Contact Us</h4>
               <p>+62 123 456 7890</p>
-              <p>info@holiday-planet.com</p>
+              <p>info@holidayplanettourism.com</p>
             </div>
             <div className='legals seperate'>
               <h4>Company & Legals</h4> 

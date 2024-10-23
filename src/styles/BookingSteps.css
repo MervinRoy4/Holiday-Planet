@@ -53,10 +53,14 @@
 
 
 .instruction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 3rem;
     border: solid;
-    border-width: 2px 2px 0px 2px;
+    border-width: 2px 1px 2px 2px;
     border-color: grey;
+
 }
 
 .steps{
@@ -89,9 +93,13 @@
     text-align: justify;
 }
 
+.table{
+    display: flex;
+}
+
 
 .step-one{
-    border-width: 2px 1px 1px 2px;   
+    border-width: 2px 1px 1px 1px;   
 }
 
 .step-two{
@@ -99,9 +107,43 @@
 }
 
 .step-three{
-    border-width: 1px 1px 2px 2px;   
+    border-width: 1px 1px 2px 1px;   
 }
 
 .step-four{
     border-width: 1px 2px 2px 1px;   
+}
+
+@media only screen and (max-width: 1024px){
+    .table{
+        display: block;
+    }
+
+    .instruction{
+        border-width: 2px 2px 0px 2px;
+    }
+
+    .step-one{
+        border-width: 2px 1px 1px 2px;   
+    }
+    
+    .step-two{
+        border-width: 2px 2px 1px 1px;   
+    }
+    
+    .step-three{
+        border-width: 1px 1px 2px 2px;   
+    }
+    
+    .step-four{
+        border-width: 1px 2px 2px 1px;   
+    }
+
+    .steps{
+        grid-template-columns: auto;
+    }
+
+    .booking-steps h1{
+        font-size: 4rem;
+    }
 }

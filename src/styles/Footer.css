@@ -83,6 +83,13 @@
     align-items: center;
 }
 
+.footer-company-info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
 .about-us{
     width: 40%;
 }
@@ -158,4 +165,30 @@ p {
     align-items: center;
     margin-top: 1rem;
 
+}
+
+
+@media only screen and (max-width: 1024px){
+    .horizontal{
+        flex-direction: column;
+    }
+
+    .social-copyright{
+        flex-direction: column;
+    }
+
+    .social-copyright p{
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .horizontal{
+        flex-direction: column;
+    }
+
+    .footer-company-info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
