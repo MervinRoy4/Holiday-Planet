@@ -1,27 +1,49 @@
-import React from 'react';
+import React from "react";
+import "../styles/Packages.css";
 
-const packages = [
-  { name: 'Sunrise Spectacle', price: 35, description: 'A guided tour with a sunrise view.' },
-  { name: 'Adventure Track', price: 58, description: 'For the adventurous souls.' },
-  { name: 'Stargazing Escape', price: 99, description: 'A stargazing experience.' },
-];
+// Define types for the package data
+interface PackageData {
+  title: string;
+  city: string;
+  days: number;
+  activityTags: string[];
+  description: string;
+  activities: string[];
+}
 
-const Packages: React.FC = () => {
+// Main component to display package details
+const Packages: React.FC<{ packageData: PackageData }> = ({ packageData }) => {
+  const { title, city, days, activityTags, description, activities } = packageData;
+
   return (
-    <section className="packages">
-      <h3>Choose Your Perfect Package</h3>
-      <div className="package-cards">
-        {packages.map((pkg, index) => (
-          <div key={index} className="package-card">
-            <h4>{pkg.name}</h4>
-            <p>{pkg.description}</p>
-            <p>${pkg.price}/person</p>
-            <button>Get Now</button>
-          </div>
+    <div className="package-container">
+      <h1 className="title">{title}</h1>
+      <p className="city">City: {city}</p>
+      <p className="days">Days: {days}</p>
+
+      <div className="tag-container">
+        {activityTags.map((tag, index) => (
+          <span key={index} className="tag">
+            {tag}
+          </span>
         ))}
       </div>
-    </section>
+
+      <div className="description-container">
+        <h2>Description</h2>
+        <p>{description}</p>
+      </div>
+
+      <div className="activities-container">
+        <h3>Activities</h3>
+        <ul>
+          {activities.map((activity, index) => (
+            <li key={index}>{activity}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
-}
+};
 
 export default Packages;
