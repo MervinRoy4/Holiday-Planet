@@ -49,15 +49,16 @@ const Footer: React.FC = () => {
         <div className='footer-company-info'>
           <div className='about-us'>
             <img src="src/assets/logo.png" alt="logo" />
-            <p>Discover the awe-inspiring beauty of Mount Bromo with our exclusive sunrise tours. Witness the breathtaking sunrise from the summit. embark on thrilling Jeep adventures, and immerse yourself in the rich local culture.</p>
+            <p>dont specify any locations
+            Discover the wonders of the world with our exclusive tours. Experience the magic of sunrise views, embark on thrilling adventures, and immerse yourself in rich local cultures. Each destination offers unique experiences, promising an unforgettable journey. Ready to explore?</p>
             <a href="">More About Us<MdArrowOutward /></a>
           </div>
           <div className='company-info'>        
             <div className="location seperate">
               <h4>Location</h4>
               <p>Holiday Planet</p>
-              <p>Address: Jl. Raya Bromo, East Java, Indonesia</p>
-              <p>lfjhg;u;lkd;lkgj</p>
+              <p>________________</p>
+              <p>_____________, Qatar</p>
             </div>
             <div className='contact-us seperate'>
               <h4>Contact Us</h4>

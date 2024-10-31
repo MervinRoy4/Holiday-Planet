@@ -1,20 +1,57 @@
-import React from "react";
 import '../styles/Package.css';
 import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
 import CalendarTodayRoundedIcon from '@mui/icons-material/CalendarTodayRounded';
+import HotelIcon from '@mui/icons-material/Hotel';
+import FlightIcon from '@mui/icons-material/Flight';
+import CabIcon from '@mui/icons-material/LocalTaxi';
 
-export default function Product() {
+interface ProductProps {
+    image: string;
+    title: string;
+    city: string;
+    days: number;
+    description: string;
+ }
+
+export default function Product(props: ProductProps) {
     return (
         <div className="package-card">
-            <img 
+            <img
                 className="package-image"
-                src="src/assets/packageImages/georgia.jpg"
-                alt="product">
-            </img>
-            <h2>Tour Title</h2>
-            <h3><LocationOnRoundedIcon />City</h3>
-            <h4><CalendarTodayRoundedIcon /> Days</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio ipsam est debitis, dolorem nam praesentium aperiam recusandae blanditiis cum consequuntur consequatur, assumenda dolorum ducimus sunt fugit qui adipisci modi!</p>
+                src={props.image}
+                alt="product"
+            />
+            <h2>{props.title}</h2>
+
+            <div className="city">
+                <LocationOnRoundedIcon />
+                <h4>{props.city}</h4>
+            </div>
+
+            <div className="days">
+                <CalendarTodayRoundedIcon />
+                <h4>{props.days} Days</h4>
+            </div>
+
+            <p>
+            {props.description}
+            </p>
+
+            <div className="includes">
+                <h4>Includes:</h4>
+                <div className="include-item">
+                    <HotelIcon />
+                    <span>Hotel</span>
+                </div>
+                <div className="include-item">
+                    <FlightIcon />
+                    <span>Flights</span>
+                </div>
+                <div className="include-item">
+                    <CabIcon />
+                    <span>Cab</span>
+                </div>
+            </div>
         </div>
-    )
+    );
 }

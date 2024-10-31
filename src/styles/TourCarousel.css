@@ -1,5 +1,4 @@
-.tour-packages Carousel{
-    margin: 20px;
-    background-color: aqua;
-    color: blue;
+.tour-packages{
+    width:  1280px;
+    margin: 1rem auto;
 }
