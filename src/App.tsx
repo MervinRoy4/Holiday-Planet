@@ -3,8 +3,10 @@ import './App.css';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Packages from './components/Packages';
+import TourCarousel from './components/TourCarousel';
 import BookingSteps from './components/BookingSteps';
 import Footer from './components/Footer';
+
 
 const packagesList = [
   {
@@ -49,6 +51,34 @@ const packagesList = [
   }
 ];
 
+const tourPackagesData = [
+  {
+      title: "Affordable 5 Days 4 Nights Turkey Family Tour Package",
+      city: "Istanbul (2N), Cappadocia (2N)",
+      days: 5,
+      services: ["Hotel", "Flights", "Guide"],
+      description: "Get ready to immerse yourself in the rich history, stunning landscapes, and vibrant culture of Turkey with our exclusive affordable 5 days 4 nights Turkey family tour package. Pack your bags and join us on a journey that promises unforgettable memories, all at an unbeatable price.",
+      image: "src/assets/packageImages/georgia.jpg"
+  },
+  {
+      title: "Beach Relaxation",
+      city: "Maldives",
+      days: 5,
+      services: ["Hotel", "Meals", "Snorkeling"],
+      description: "Relax on the beautiful beaches of Maldives.",
+      image: "path_to_image2.jpg"
+  },
+  {
+      title: "Cultural Exploration",
+      city: "Rome",
+      days: 6,
+      services: ["Hotel", "Tours", "Meals"],
+      description: "Explore the rich history and culture of Rome.",
+      image: "path_to_image3.jpg"
+  }
+];
+
+
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -61,6 +91,7 @@ const App: React.FC = () => {
         ))}
       </div>
       </div>
+      <TourCarousel />
       <BookingSteps />
       <Footer />
     </div>

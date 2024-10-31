@@ -1,0 +1,21 @@
+.package-card {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package-image {
+    padding: 0.5rem;
+    border-radius: 16px;
+    width: calc(100% - 16px);
+}
+
+.package-card h2, h3, h4, p{
+    margin: 0px;
+    padding: 0.5rem;
+    align-items: center;
+    vertical-align: middle;
+
+}
