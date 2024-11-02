@@ -58,3 +58,9 @@
 .include-item span {
     margin-left: 8px;
 }
+
+@media only screen and (max-width: 1280px){
+    .package-card h2{
+        font-size: 20px;
+    }
+}

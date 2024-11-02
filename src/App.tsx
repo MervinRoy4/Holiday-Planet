@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <Header />
       <HeroSection />
       <TourCarousel />
-      <BookingSteps />
+      <BookingSteps />5a
       <Footer />
     </div>
   );
