@@ -20,7 +20,6 @@ const Header: React.FC = () => {
           <a href="#tour-details">Tour Details</a>
           <a href="#travel-plan">Travel Plan</a>
           <a href="#packages">Packages</a>
-          <a href="#testimonials">Testimonials</a>
         </nav>
 
         <div className='cta'>

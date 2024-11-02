@@ -1,0 +1,20 @@
+.legal {
+    width: 1280px;
+    padding-top: 100px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 1280px){
+    .legal {
+        width: calc(100% - 32px);
+        padding: 100px 16px 48px;
+        margin: 0 auto;
+    }
+
+    .legal p{
+        text-align: justify;
+    }
+}

@@ -62,7 +62,7 @@ const TourCarousel = () => {
     ))
 
     return (
-        <div className="tour-packages">
+        <div className="tour-packages" id="packages">
             <Carousel responsive={responsive}>{packagex}</Carousel>
         </div>
     );

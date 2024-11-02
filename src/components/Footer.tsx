@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube  } from 'react-icons/fa'; // Icons from react-icons
 import { MdArrowOutward } from "react-icons/md";
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css'
 
 const Footer: React.FC = () => {
@@ -67,10 +68,9 @@ const Footer: React.FC = () => {
             </div>
             <div className='legals seperate'>
               <h4>Company & Legals</h4> 
-              <p>About us</p>
-              <p>Frequently Ask Question</p>
-              <p>Term of Services</p>
-              <p>License</p>
+              <Link to="/about-us">About Us</Link>
+              <Link to="/terms-and-conditions">Terms and Conditions</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </div>
           </div>
         </div>
