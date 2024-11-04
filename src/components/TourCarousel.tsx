@@ -41,8 +41,8 @@ const TourCarousel = () => {
           image: "src/assets/packageImages/georgia.jpg"
       },
       {
-          title: "5 Nights 6 Days Mtskheta Tour package",
-          city: "Mtskheta",
+          title: "5 Nights 6 Days Georgia Tour package",
+          city: "Georgia",
           days: 6,
           services: ["Hotel", "Tours", "Meals"],
           description: "Uncover the hidden gems of Georgia and delve into the historical wonders that await you. Explore some top attractions such as  Nekresi Monastery complex, Marani, Alaverdi Cathedral and Ski resort Gudauri as well as enjoy activities like hiking and nature walk.",

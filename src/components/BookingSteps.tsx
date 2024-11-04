@@ -4,7 +4,7 @@ import '../styles/BookingSteps.css';
 
 const BookingSteps: React.FC = () => {
   return (
-    <section className="booking-steps">
+    <section className="booking-steps" id='booking-steps'>
       <h1>How to Book Your Tour</h1>
 
       <div className='table'>

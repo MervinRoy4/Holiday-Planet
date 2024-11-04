@@ -30,7 +30,7 @@
   }
   
   .navigation a {
-    color: white;
+    color: rgb(60, 60, 60);
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -59,7 +59,7 @@
   .book-now {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(16px);
-    color: white;
+    color: rgb(60, 60, 60);
     height: 100%;
     border: none;
     padding: 11px 10px 10px 10px;

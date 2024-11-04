@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube  } from 'react-icons/fa'; // Icons from react-icons
-import { MdArrowOutward } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import '../styles/Footer.css'
 
@@ -50,20 +49,18 @@ const Footer: React.FC = () => {
         <div className='footer-company-info'>
           <div className='about-us'>
             <img src="src/assets/logo.png" alt="logo" />
-            <p>dont specify any locations
-            Discover the wonders of the world with our exclusive tours. Experience the magic of sunrise views, embark on thrilling adventures, and immerse yourself in rich local cultures. Each destination offers unique experiences, promising an unforgettable journey. Ready to explore?</p>
-            <a href="">More About Us<MdArrowOutward /></a>
+            <p>Discover the wonders of the world with our exclusive tours. Experience the magic of sunrise views, embark on thrilling adventures, and immerse yourself in rich local cultures. Each destination offers unique experiences, promising an unforgettable journey. Ready to explore?</p>
           </div>
           <div className='company-info'>        
             <div className="location seperate">
               <h4>Location</h4>
               <p>Holiday Planet</p>
-              <p>________________</p>
-              <p>_____________, Qatar</p>
+              <p>Doha,</p>
+              <p>Qatar.</p>
             </div>
             <div className='contact-us seperate'>
               <h4>Contact Us</h4>
-              <p>+62 123 456 7890</p>
+              <p>+974 XXXX XXXX</p>
               <p>info@holidayplanettourism.com</p>
             </div>
             <div className='legals seperate'>

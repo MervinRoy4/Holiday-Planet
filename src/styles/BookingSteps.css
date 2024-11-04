@@ -40,6 +40,7 @@
     align-items: center;
     width: fit-content;
     margin: 1rem 0rem;
+    border-radius: 1rem;
 }
 
 .icon {
@@ -58,9 +59,11 @@
     justify-content: center;
     padding: 3rem;
     border: solid;
-    border-width: 2px 1px 2px 2px;
-    border-color: grey;
-
+    border-width: 1px 1px 1px 1px;
+    border-color:  rgb(190, 190, 190);
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0.25rem;
 }
 
 .steps{
@@ -68,14 +71,17 @@
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
     flex-wrap: wrap;
+    
 }
-
 
 
 .step{
     padding: 3rem;
-    border: solid grey;
-    border-width: 2px 2px 2px 2px;    
+    border: solid rgb(190, 190, 190);
+    border-width: 1px 1px 1px 1px;    
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0.25rem;
 }
 
 .step h3{
@@ -98,45 +104,9 @@
 }
 
 
-.step-one{
-    border-width: 2px 1px 1px 1px;   
-}
-
-.step-two{
-    border-width: 2px 2px 1px 1px;   
-}
-
-.step-three{
-    border-width: 1px 1px 2px 1px;   
-}
-
-.step-four{
-    border-width: 1px 2px 2px 1px;   
-}
-
 @media only screen and (max-width: 1024px){
     .table{
         display: block;
-    }
-
-    .instruction{
-        border-width: 2px 2px 0px 2px;
-    }
-
-    .step-one{
-        border-width: 2px 1px 1px 2px;   
-    }
-    
-    .step-two{
-        border-width: 2px 2px 1px 1px;   
-    }
-    
-    .step-three{
-        border-width: 1px 1px 2px 2px;   
-    }
-    
-    .step-four{
-        border-width: 1px 2px 2px 1px;   
     }
 
     .steps{
@@ -151,26 +121,6 @@
 @media only screen and (max-width: 700px){
     .table{
         display: block;
-    }
-
-    .instruction{
-        border-width: 2px 2px 0px 2px;
-    }
-
-    .step-one{
-        border-width: 2px 2px 1px 2px;   
-    }
-    
-    .step-two{
-        border-width: 1px 2px 1px 2px;   
-    }
-    
-    .step-three{
-        border-width: 1px 2px 1px 2px;   
-    }
-    
-    .step-four{
-        border-width: 1px 2px 2px 2px;   
     }
 
     .steps{

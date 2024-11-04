@@ -33,9 +33,6 @@ export default function Product(props: ProductProps) {
                 <h4>{props.days} Days</h4>
             </div>
 
-            <p>
-            {props.description}
-            </p>
 
             <div className="includes">
                 <h4>Includes:</h4>
