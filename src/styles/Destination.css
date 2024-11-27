@@ -9,7 +9,7 @@
   }
   
   .carousel-image {
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
@@ -48,16 +48,18 @@
   
   .carousel-button {
     display: none;
-    background-color: #ff6a00;
+    background-color: #142542;
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 16px;
     font-size: 1rem;
     cursor: pointer;
     margin-top: 10px;
     align-self: flex-start;
     transition: opacity 0.3s ease;
+    border: 1px solid #929292;
+    /* box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); */
   }
   
   .carousel-item:hover .carousel-image {
@@ -79,4 +81,14 @@
   align-items: center;
 }
 
-  
+.destination-title {
+  font-size: 3rem; /* Adjust font size */
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #142542;
+  text-align: center; /* Align the text to the left */
+  max-width: 1024px; /* Limit the width of the title */
+  margin-left: auto; /* Center the title container horizontally */
+  margin-right: auto; /* Center the title container horizontally */
+  margin-top: 48px;
+}

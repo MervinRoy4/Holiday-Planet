@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
             </div>
             <div className='contact-us seperate'>
               <h4>Contact Us</h4>
-              <p>+974 XXXX XXXX</p>
+              <p>+974 7757 5288</p>
               <p>info@holidayplanettourism.com</p>
             </div>
             <div className='legals seperate'>

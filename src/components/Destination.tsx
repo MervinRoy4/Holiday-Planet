@@ -43,22 +43,25 @@ const Destination: React.FC<CarouselProps> = ({ items }) => {
   };
 
   return (
-    <Slider {...settings}>
-      {items.map((item, index) => (
-        <div key={index} className="carousel-item">
-          <div className="carousel-image" style={{ backgroundImage: `url(${item.imageUrl})` }}>
-            <div className="carousel-overlay">
-              <div className="carousel-info">
-                <h2>{item.destination}</h2>
-                <p>{item.price}</p>
+    <div className="destination-container" id="destination">
+      <h1 className="destination-title">Top Destinations</h1>
+      <Slider {...settings}>
+        {items.map((item, index) => (
+          <div key={index} className="carousel-item">
+            <div className="carousel-image" style={{ backgroundImage: `url(${item.imageUrl})` }}>
+              <div className="carousel-overlay">
+                <div className="carousel-info">
+                  <h2>{item.destination}</h2>
+                  <p>{item.price}</p>
+                </div>
+                <button className="carousel-button">Book Now</button>
               </div>
-              <button className="carousel-button">Book Now</button>
             </div>
           </div>
-        </div>
-      ))}
-    </Slider>
-  );
+        ))}
+      </Slider>
+    </div>
+  );  
 };
 
 export default Destination;

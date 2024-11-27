@@ -61,8 +61,8 @@ const PrivacyPolicy: React.FC = () => {
         <p>If you have any questions about this privacy policy, please contact us at:</p>
         <p>The primary point of contact for all issues arising from this Privacy Notice is our Data Privacy Officer, sending us an email communication to the Data Privacy Office.</p>
         <p>Email: info@holidayplanettourism.com</p>
-        <p>Phone: ………………………………. </p>
-        <p>Address: ………………………. </p>
+        <p>Phone: +974 7757 5288 </p>
+        <p>Address:  </p>
 
         <h4>10. HOW TO CONTACT US</h4>
         <p>If you have any questions, concerns, or complaints regarding our compliance with this Privacy Notice, we encourage you to first contact our Data Privacy Officer. We will investigate and attempt to resolve complaints and disputes as quickly as possible and in any event, within the timescales provided by applicable data protection laws.</p>
