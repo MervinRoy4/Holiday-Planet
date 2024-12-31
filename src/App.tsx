@@ -12,6 +12,7 @@ import Terms from './pages/Terms.tsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
 import Contact from './pages/Contact.tsx';
 import Destination from './components/Destination.tsx';
+import Carousel from './components/Carousel';``
 
 const App: React.FC = () => {
   const carouselItems = [
@@ -20,6 +21,12 @@ const App: React.FC = () => {
     { imageUrl: 'https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg', destination: 'New York', price: '$450' },
     { imageUrl: 'https://2017-2021.state.gov/wp-content/uploads/2020/11/georgia_tbilisi_skyline-2560x1300.jpg', destination: 'Georgia', price: '4150 QAR' },
     { imageUrl: 'https://media.cntraveller.com/photos/63eb5a36b515236831979f64/16:9/w_1920%2Cc_limit/GettyImages-1145042281.jpeg  ', destination: 'Bali', price: '2450 QAR' },
+  ];
+
+  const images = [
+    'https://via.placeholder.com/800x400?text=Slide+1',
+    'https://via.placeholder.com/800x400?text=Slide+2',
+    'https://via.placeholder.com/800x400?text=Slide+3',
   ];
 
   return (
@@ -33,11 +40,14 @@ const App: React.FC = () => {
             element={
               <>
                 <Header />
+                
                 <HeroSection />
+                <Carousel />
                 <Destination items={carouselItems}/>
                 <h1 className='title'>Itinerary Details</h1>              
                 <TourCarousel />
                 <BookingSteps/>
+
               </>
             }
           />
