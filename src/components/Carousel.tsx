@@ -70,11 +70,14 @@ const Carousel: React.FC = () => {
 
       {/* Thumbnails */}
       <div className={styles.thumbnail}>
-        {sliderItems.map((image, index) => (
-          <div className={styles.thumbnailItem} key={index}>
-            <img src={image} alt={`Thumbnail ${index + 1}`} />
-          </div>
-        ))}
+        {sliderItems
+          .slice(1) // Start from the second item to show the next slide first
+          .concat(sliderItems.slice(0, 1)) // Add the first item at the end for a seamless loop
+          .map((image, index) => (
+            <div className={styles.thumbnailItem} key={index}>
+              <img src={image} alt={`Thumbnail ${index + 1}`} />
+            </div>
+          ))}
       </div>
 
       {/* Navigation */}

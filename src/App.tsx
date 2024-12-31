@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar.tsx';
-import HeroSection from './components/HeroSection';
 import TourCarousel from './components/TourCarousel';
 import BookingSteps from './components/BookingSteps';
 import Footer from './components/Footer';
@@ -23,12 +22,6 @@ const App: React.FC = () => {
     { imageUrl: 'https://media.cntraveller.com/photos/63eb5a36b515236831979f64/16:9/w_1920%2Cc_limit/GettyImages-1145042281.jpeg  ', destination: 'Bali', price: '2450 QAR' },
   ];
 
-  const images = [
-    'https://via.placeholder.com/800x400?text=Slide+1',
-    'https://via.placeholder.com/800x400?text=Slide+2',
-    'https://via.placeholder.com/800x400?text=Slide+3',
-  ];
-
   return (
     <Router>
       <div className="App">
@@ -40,8 +33,6 @@ const App: React.FC = () => {
             element={
               <>
                 <Header />
-                
-                <HeroSection />
                 <Carousel />
                 <Destination items={carouselItems}/>
                 <h1 className='title'>Itinerary Details</h1>              
