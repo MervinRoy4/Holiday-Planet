@@ -35,18 +35,14 @@ export default function Product(props: ProductProps) {
 
 
             <div className="includes">
-                <h4>Includes:</h4>
-                <div className="include-item">
+                <div className="icon-wrapper">
                     <HotelIcon />
-                    <span>Hotel</span>
                 </div>
-                <div className="include-item">
+                <div className="icon-wrapper">
                     <FlightIcon />
-                    <span>Flights</span>
                 </div>
-                <div className="include-item">
+                <div className="icon-wrapper">
                     <CabIcon />
-                    <span>Cab</span>
                 </div>
             </div>
         </div>
