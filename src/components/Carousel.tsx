@@ -3,10 +3,10 @@ import styles from '../styles/Carousel.module.css'; // Import CSS module
 
 const Carousel: React.FC = () => {
   const [sliderItems, setSliderItems] = useState<string[]>([
-    'https://raw.githubusercontent.com/HoanghoDev/slider_1/main/image/img1.jpg',
-    'https://raw.githubusercontent.com/HoanghoDev/slider_1/main/image/img2.jpg',
-    'https://raw.githubusercontent.com/HoanghoDev/slider_1/main/image/img3.jpg',
-    'https://raw.githubusercontent.com/HoanghoDev/slider_1/main/image/img4.jpg',
+    '/assets/heroImages/pexels-timrael-2474690.jpg',
+    '/assets/heroImages/denis-arslanbekov-b-eGDk5_gPo-unsplash.jpg',
+    '/assets/heroImages/pexels-belle-co-99483-402028.jpg',
+    '/assets/heroImages/pexels-timrael-2474690.jpg',
   ]);
 
   const carouselRef = useRef<HTMLDivElement>(null);

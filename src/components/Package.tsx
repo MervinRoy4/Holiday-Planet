@@ -33,7 +33,6 @@ export default function Product(props: ProductProps) {
                 <h4>{props.days} Days</h4>
             </div>
 
-
             <div className="includes">
                 <div className="icon-wrapper">
                     <HotelIcon />
