@@ -1,17 +1,44 @@
 import React, { useRef, useState, useEffect } from 'react';
 import styles from '../styles/Carousel.module.css'; // Import CSS module
 
+interface SliderItem {
+  image: string;
+  title: string;
+  description: string;
+}
+
 const Carousel: React.FC = () => {
-  const [sliderItems, setSliderItems] = useState<string[]>([
-    '/assets/heroImages/pexels-timrael-2474690.jpg',
-    '/assets/heroImages/denis-arslanbekov-b-eGDk5_gPo-unsplash.jpg',
-    '/assets/heroImages/pexels-belle-co-99483-402028.jpg',
-    '/assets/heroImages/pexels-timrael-2474690.jpg',
+  const [sliderItems, setSliderItems] = useState<SliderItem[]>([
+    {
+      image: '/assets/heroImages/pexels-timrael-2474690.jpg',
+      title: 'Mountain Sunrise',
+      description: 'Experience the serene beauty of mountain sunrises.',
+    },
+    {
+      image: '/assets/heroImages/denis-arslanbekov-b-eGDk5_gPo-unsplash.jpg',
+      title: 'Urban Landscape',
+      description: 'Discover the charm of bustling cityscapes.',
+    },
+    {
+      image: '/assets/heroImages/pexels-belle-co-99483-402028.jpg',
+      title: 'Peaceful Beach',
+      description: 'Relax by the calming waves of the ocean.',
+    },
+    {
+      image: '/assets/heroImages/amazing-autumn-scenery-santa-maddalena-village-with-church-colorful-trees-meadows-rising-sun-rays-dolomite-alps-italy.jpg',
+      title: 'Autumn Vibes',
+      description: 'Enjoy the vibrant colors of autumn in the Dolomites.',
+    },
+    {
+      image: '/assets/heroImages/photo-1565967511849-76a60a516170.jpg',
+      title: 'Singapore',
+      description: 'Enjoy the vibrant colors of Singapore.',
+    },
   ]);
 
   const carouselRef = useRef<HTMLDivElement>(null);
   const timeRunning = 3000;
-  const timeAutoNext = 7000;
+  const timeAutoNext = 17000;
 
   const [autoNextTimeout, setAutoNextTimeout] = useState<NodeJS.Timeout | null>(null);
   const [animationTimeout, setAnimationTimeout] = useState<NodeJS.Timeout | null>(null);
@@ -61,23 +88,29 @@ const Carousel: React.FC = () => {
     <div className={styles.carousel} ref={carouselRef}>
       {/* Slider */}
       <div className={styles.list}>
-        {sliderItems.map((image, index) => (
+        {sliderItems.map((item, index) => (
           <div className={styles.item} key={index}>
-            <img src={image} alt={`Slide ${index + 1}`} />
+            <img src={item.image} alt={item.title} />
+            <div className={styles.content}>
+              <h2 className={styles.title}>{item.title}</h2>
+              <p className={styles.description}>{item.description}</p>
+            </div>
           </div>
         ))}
       </div>
 
       {/* Thumbnails */}
       <div className={styles.thumbnail}>
-        {sliderItems
-          .slice(1) // Start from the second item to show the next slide first
-          .concat(sliderItems.slice(0, 1)) // Add the first item at the end for a seamless loop
-          .map((image, index) => (
-            <div className={styles.thumbnailItem} key={index}>
-              <img src={image} alt={`Thumbnail ${index + 1}`} />
-            </div>
-          ))}
+        {sliderItems.map((item, index) => (
+          <div
+            className={`${styles.thumbnailItem} ${
+              index === 0 ? styles.activeThumbnail : ''
+            }`}
+            key={index}
+          >
+            <img src={item.image} alt={item.title} />
+          </div>
+        ))}
       </div>
 
       {/* Navigation */}

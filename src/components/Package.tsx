@@ -4,6 +4,8 @@ import CalendarTodayRoundedIcon from '@mui/icons-material/CalendarTodayRounded';
 import HotelIcon from '@mui/icons-material/Hotel';
 import FlightIcon from '@mui/icons-material/Flight';
 import CabIcon from '@mui/icons-material/LocalTaxi';
+import SupervisorAccountRoundedIcon from '@mui/icons-material/SupervisorAccountRounded';
+import HikingRoundedIcon from '@mui/icons-material/HikingRounded';
 
 interface ProductProps {
     image: string;
