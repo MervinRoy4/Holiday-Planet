@@ -16,23 +16,23 @@ const Carousel: React.FC = () => {
     },
     {
       image: '/assets/heroImages/denis-arslanbekov-b-eGDk5_gPo-unsplash.jpg',
-      title: 'Urban Landscape',
-      description: 'Discover the charm of bustling cityscapes.',
+      title: 'Heart of Tbilisi, Georgia',
+      description: 'Through cobblestone streets illuminated by the warm glow of evening lights, the perfect blend of ancient history and modern charm',
     },
     {
       image: '/assets/heroImages/pexels-belle-co-99483-402028.jpg',
-      title: 'Peaceful Beach',
-      description: 'Relax by the calming waves of the ocean.',
+      title: 'Kiyomizu-dera Temple',
+      description: "Kyoto's iconic Kiyomizu-dera Temple, a true masterpiece of Japanese beauty.",
     },
     {
-      image: '/assets/heroImages/amazing-autumn-scenery-santa-maddalena-village-with-church-colorful-trees-meadows-rising-sun-rays-dolomite-alps-italy.jpg',
-      title: 'Autumn Vibes',
-      description: 'Enjoy the vibrant colors of autumn in the Dolomites.',
+      image: 'src/assets/heroImages/turkey.jpg',
+      title: 'Istanbul city, Turkey',
+      description: 'Where East meets West, history whispers through ancient streets, and vibrant culture dances along the Bosphorus.',
     },
     {
       image: '/assets/heroImages/photo-1565967511849-76a60a516170.jpg',
-      title: 'Singapore',
-      description: 'Enjoy the vibrant colors of Singapore.',
+      title: 'Majestic Merlion',
+      description: 'At the vibrant heart of Singapore, epitomizes the city’s blend of culture and innovation.',
     },
   ]);
 
@@ -101,16 +101,20 @@ const Carousel: React.FC = () => {
 
       {/* Thumbnails */}
       <div className={styles.thumbnail}>
-        {sliderItems.map((item, index) => (
-          <div
-            className={`${styles.thumbnailItem} ${
-              index === 0 ? styles.activeThumbnail : ''
-            }`}
-            key={index}
-          >
-            <img src={item.image} alt={item.title} />
-          </div>
-        ))}
+        {sliderItems.map((item, index) => {
+          // Calculate next image index for thumbnails
+          const nextIndex = (index + 1) % sliderItems.length;
+          return (
+            <div
+              className={`${styles.thumbnailItem} ${
+                index === 1 ? styles.activeThumbnail : ''
+              }`}
+              key={nextIndex}
+            >
+              <img src={sliderItems[nextIndex].image} alt={sliderItems[nextIndex].title} />
+            </div>
+          );
+        })}
       </div>
 
       {/* Navigation */}

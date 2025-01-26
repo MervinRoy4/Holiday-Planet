@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     <>
       <header className="header">
         <div className="logo">
-          <img src="src/assets/logo_color.png" alt="logo" />
+          <img src="src/assets/headerLogo.svg" alt="logo" />
         </div>
         
         <nav className="navigation">
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         </nav>
 
         <div className='cta'>
-          <button className="book-now">CONTACT US</button>
+          <a href="tel:+97477575288" className="book-now">CONTACT US</a>
         </div>
 
         <button className="sidebar-toggle" onClick={toggleSidebar}>
